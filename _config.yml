@@ -5,7 +5,7 @@ description:         'This site was created with the objective of offering free,
 url:                 'https://erlete.github.io/'
 baseurl:             ''
 paginate:            5
-permalink:           'homedir'
+permalink:           pretty
 
 # About/contact
 author:
