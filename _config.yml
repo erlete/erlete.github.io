@@ -1,11 +1,11 @@
 # Setup
 title:               'sudo learn: an educational project'
-tagline:             ''
-description:         'This site was created with the objective of offering free, curated and direct information for developers all around the globe.'
+tagline:             'Free, curated and direct content for developers all around the world.'
+description:         'This site was created with the objective of offering free, curated and direct information for developers all around the world.'
 url:                 'https://erlete.github.io/'
 baseurl:             ''
 paginate:            5
-permalink:           pretty
+permalink:           'homedir'
 
 # About/contact
 author:

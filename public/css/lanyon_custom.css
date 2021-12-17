@@ -157,7 +157,8 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: .875rem; /* 15px */
   color: rgba(255,255,255,.6);
-  background-color: rgba(0,0,0,.75);
+  background-color: rgba(0,0,0,.9);
+  box-shadow: .05rem .05rem .5rem rgba(0,0,0,.5);
   z-index: 0;
   -webkit-transition: all .6s ease-out;
           transition: all .6s ease-out;
@@ -225,7 +226,7 @@ a.sidebar-nav-item:focus {
   display: flex;
   align-items: center;
   padding: .25rem .75rem;
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(0,0,0,.9);
   border-radius: .25rem;
   cursor: pointer;
 }
@@ -242,7 +243,7 @@ a.sidebar-nav-item:focus {
 #sidebar-checkbox:focus ~ .sidebar-toggle,
 #sidebar-checkbox:checked ~ .sidebar-toggle {
   z-index: 1;
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(0,0,0,.9);
 }
 
 .sidebar-toggle:active:before,
