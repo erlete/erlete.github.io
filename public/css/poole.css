@@ -48,7 +48,7 @@ body {
 }
 
 html {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Monospace", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -156,7 +156,7 @@ code {
   padding: .25em .5em;
   font-size: 85%;
   color: #bf616a;
-  background-color: #f9f9f9;
+  background-color: rgba(0,0,0,.75);
   border-radius: 3px;
 }
 pre {
@@ -164,13 +164,13 @@ pre {
   margin-top: 0;
   margin-bottom: 1rem;
   padding: 1rem;
-  font-size: .8rem;
+  font-size: .75rem;
   line-height: 1.4;
-  white-space: pre;
-  white-space: pre-wrap;
-  word-break: break-all;
   word-wrap: break-word;
-  background-color: #f9f9f9;
+  word-break: keep-all;
+  overflow-x: scroll;
+  background-color: rgba(0,0,0,.75);
+  border-radius: .5em;
 }
 pre code {
   padding: 0;
