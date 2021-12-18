@@ -76,16 +76,16 @@ h1, h2, h3, h4, h5, h6 {
  */
 
 .container {
-  max-width: 28rem;
+  max-width: 45rem;
 }
 @media (min-width: 38em) {
   .container {
-    max-width: 32rem;
+    max-width: 45rem;
   }
 }
 @media (min-width: 56em) {
   .container {
-    max-width: 38rem;
+    max-width: 45rem;
   }
 }
 
@@ -297,13 +297,17 @@ a.sidebar-nav-item:focus {
   visibility: visible;
 }
 #sidebar-checkbox:checked ~ .sidebar,
-#sidebar-checkbox:checked ~ .wrap,
-#sidebar-checkbox:checked ~ .sidebar-toggle {
+#sidebar-checkbox:checked ~ .wrap {
   -webkit-transform: translateX(11rem);
       -ms-transform: translateX(11rem);
           transform: translateX(11rem);
 }
-
+#sidebar-checkbox:checked ~ .sidebar-toggle {
+  z-index: 0;
+  -webkit-transform: translateX(-5rem);
+      -ms-transform: translateX(-5rem);
+          transform: translateX(-5rem);
+}
 
 /*
  * Posts and pages
