@@ -9,8 +9,8 @@ _Search algorithms are finite sequences of instructions that enable a program to
 
 If you haven't quite understood the previous expression, well... that's okay! You are here to learn about this type of algorithms, so do not be overwhelmed if you find parts of this explanation a bit hard to understand. First of all, let's start with the basics, two simple concepts:
 
-* **Array**: a collection of elements, generally of the same type: `[1, 2, 3], ("sun", "moon", "comet")`.
-* **Node**: an array's element, which might have extra information regarding said array: `"moon": {"index": 1, "type": "string"}`.
+* **Array**: a collection of elements, generally of the same type: `[1, 2, 3]`, `("sun", "moon", "comet")`.
+* **Node**: an array's element that contains useful information about itself: `"moon": {"index": 1, "state": "rotating"}`.
 
 Both of these elements are actually _data structures_, which are, abstractly, specifically designed collections of data that ease their treatment process by providing with special attributes and methods.
 
