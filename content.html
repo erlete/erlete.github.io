@@ -1,0 +1,20 @@
+---
+layout: page
+title: Content
+description: wtd
+permalink: content.html
+---
+
+<p>Here you can find a list of all the posts in this website:</p>
+
+<div class="posts">
+  <div class="container content">
+    {% for post in site.posts %}
+    <li>
+      <a href="{{ site.baseurl }}{{ post.url }}">
+        {{ post.title }} - {{ post.date | date_to_string }}
+      </a>
+    </li>
+    {% endfor %}
+  </div>
+</div>
