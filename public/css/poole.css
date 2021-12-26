@@ -169,6 +169,8 @@ pre {
   font-size: .75rem;
   line-height: 1.4;
   background-color: rgba(0,0,0,.75);
+  border-radius: .5em;
+  border: 10px solid rgba(0,0,0,.5);
 }
 pre code {
   padding: 0;
