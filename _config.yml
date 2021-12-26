@@ -1,10 +1,10 @@
 # Setup
-title:               'sudo learn: an educational project'
-tagline:             'Free, curated and direct content for developers all around the world.'
+title:               'sudo learn'
+tagline:             'an educational project'
 description:         'This site was created with the objective of offering free, curated and direct information for developers all around the world.'
 url:                 'https://erlete.github.io/'
 baseurl:             ''
-paginate:            5
+paginate:            1
 permalink:           pretty
 
 # About/contact
@@ -12,6 +12,7 @@ author:
   name:              Paulo Sanchez
   url:               https://github.com/erlete/
   email:             dev.szblzpaulo@gmail.com
+  repourl:           https://github.com/erlete/erlete.github.io
 
 # Gems
 plugins:
