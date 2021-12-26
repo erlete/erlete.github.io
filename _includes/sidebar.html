@@ -23,8 +23,9 @@
       {% endif %}
     {% endfor %}
 
-    <a class="sidebar-nav-item" href="https://github.com/erlete">GitHub project</a>
-    <!-- <span class="sidebar-nav-item">Currently v{{ site.version }}</span> -->
+    <a class="sidebar-nav-item" href="{{ site.author.url }}">GitHub profile</a>
+    <a class="sidebar-nav-item" href="{{ site.author.repourl }}">GitHub project</a>
+    <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
   </nav>
 
   <div class="sidebar-item" height=5em>
