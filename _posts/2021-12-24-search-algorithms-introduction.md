@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Search algorithms
+series: Search Algorithms
 ---
 
 ## What are search algorithms?
