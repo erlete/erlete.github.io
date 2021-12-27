@@ -12,12 +12,11 @@ layout: default
 <div class="related">
   <h2>Related posts</h2>
   <ul class="related-posts">
-    {% for post in site.related_posts limit:3 %}
+    {% for post in site.related_posts limit:4 %}
       <li>
         <h3>
           <a href="{{ site.baseurl }}{{ post.url }}">
             {{ post.title }}
-            <small>{{ post.date | date_to_string }}</small>
           </a>
         </h3>
       </li>
@@ -26,7 +25,7 @@ layout: default
 </div>
 {% endif %}
 
-<div class="pagination">
+<!-- <div class="pagination">
   {% if paginator.next_page %}
     <a class="pagination-item older" href="{{ paginator.next_page_path | absolute_url }}">Older</a>
   {% else %}
@@ -42,3 +41,4 @@ layout: default
     <span class="pagination-item newer">Newer</span>
   {% endif %}
 </div>
+ -->
