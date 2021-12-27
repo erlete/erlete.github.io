@@ -6,6 +6,7 @@ url:                 'https://erlete.github.io/'
 baseurl:             ''
 paginate:            1
 permalink:           pretty
+repository:          erlete/erlete.github.io
 
 # About/contact
 author:
@@ -17,6 +18,7 @@ author:
 # Gems
 plugins:
   - jekyll-paginate
+  - jekyll-github-metadata
 
 # Custom vars
 version:             1.1.0
@@ -24,3 +26,7 @@ google_analytics_id: #UA-XXXX-Y
 
 # Theme
 remote_theme: poole/lanyon
+
+# Defaults
+
+series: "Pandas, Search Algorithms"
