@@ -4,7 +4,7 @@
 
 <!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
-  <div class="sidebar-item" height=50em></div>
+  <div class="sidebar-title" height=50em><br></div>
 
   <nav class="sidebar-nav">
     <a class="sidebar-nav-item{% if page.title == 'Home' %} active{% endif %}" href="{{ '/' | absolute_url }}">Homepage</a>
@@ -25,7 +25,19 @@
 
     <a class="sidebar-nav-item" href="{{ site.author.url }}">GitHub profile</a>
     <a class="sidebar-nav-item" href="{{ site.author.repourl }}">GitHub project</a>
-    <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
+
+    <span class="sidebar-nav-item">Post categories:</span>
+
+    {% assign pages_list = site.posts | sort: "series" %}
+    {% for node in pages_list %}
+      {% if node.title != null %}
+        {% if node.layout == "post" %}
+          <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url | absolute_url }}">{{ node.title }}</a>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+
+  <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
   </nav>
 
   <div class="sidebar-item" height=5em>
