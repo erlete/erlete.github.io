@@ -1,20 +1,27 @@
 ---
 layout: page
 title: Content
-description: wtd
 permalink: content.html
 ---
 
-<p>Here you can find a list of all the posts in this website:</p>
+<p>Here you can find the index of all published articles, ordered by topic and inverse chronological order:</p>
 
+{% assign arr = site.series | split: ", " %}
+{% for series in arr %}
 <div class="posts">
+  <h2>{{ series }}</h2>
   <div class="container content">
-    {% for post in site.posts %}
-    <li>
-      <a href="{{ site.baseurl }}{{ post.url }}">
-        {{ post.title }} - {{ post.date | date_to_string }}
+    <ol>
+    {% assign posts = site.posts | sort: post.date %}
+    {% for post in posts %}
+    {% if post.series == series %}
+    <li><a href="{{ site.baseurl }}{{ post.url }}">
+        {{ post.title }}
       </a>
     </li>
+    {% endif %}
     {% endfor %}
+    </ol>
   </div>
 </div>
+{% endfor %}
