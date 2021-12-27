@@ -184,6 +184,11 @@ iframe {
 	font-weight: normal;
 	color: #fff;
 }
+.sidebar-title {
+	padding: 2rem;
+	font-family: "Monaco";
+	font-size: 1.25em;
+}
 .sidebar-item {
 	padding: 1rem;
 }
@@ -326,7 +331,7 @@ a.sidebar-nav-item:focus {
 
 .page,
 .post {
-	margin: 4em 1em;
+	margin: 4em 1em 2em 1em;
 }
 
 /* Blog post or page title */
@@ -350,8 +355,8 @@ a.sidebar-nav-item:focus {
 
 /* Related posts */
 .related {
-	padding-top: 2rem;
-	padding-bottom: 2rem;
+	padding-top: 1rem;
+	padding-bottom: 4rem;
 	border-top: 1px solid #eee;
 }
 .related-posts {
