@@ -185,7 +185,6 @@ pre code {
   border-radius: 20px;
   word-wrap: keep-all;
   word-break: keep-all;
-  overflow-x: scroll;
 }
 .highlight pre {
   margin-bottom: 0;
